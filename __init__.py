@@ -26,6 +26,10 @@ def meteo():
 def mongraphique():
     return render_template("graphique.html")
   
+@app.route("/Hhistogramme/")
+def monhistogramme():
+    return render_template("Histogramme.html")
+  
 @app.route("/contact/")
 def MaPremiereAPI():
     return "<h2>Ma page de contact</h2>"  
