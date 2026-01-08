@@ -12,6 +12,9 @@ api_url = "https://api.github.com/repos/VOTRE_PSEUDO_GITHUB/5MCSI_Metriques/comm
 @app.route('/')
 def hello_world():
     return render_template('hello.html') #MYCOMEEEEEOOOOOOOOOOOOOOOOO
+@app.route("/commits/")
+def commits_page():
+    return render_template("commits.html")
 
 @app.route('/tawarano/')
 def meteo():
