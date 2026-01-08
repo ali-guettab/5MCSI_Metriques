@@ -23,15 +23,12 @@
           dataTable.addColumn('string', 'Minute');
           dataTable.addColumn('number', 'Commits');
 
-          // Optionnel: limiter aux 40 derniers points pour lisibilité
-          const last = data.results.slice(-40);
-
-          last.forEach(row => {
+          data.results.forEach(row => {
             dataTable.addRow([row.minute, row.count]);
           });
 
           const options = {
-            title: 'Nombre de commits (agrégé par minute)',
+            title: 'Nombre de commits (par minute)',
             legend: { position: 'none' },
             hAxis: { title: 'Minute', slantedText: true, slantedTextAngle: 45 },
             vAxis: { title: 'Commits' }
