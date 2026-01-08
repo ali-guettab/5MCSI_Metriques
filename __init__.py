@@ -14,7 +14,7 @@ def hello_world():
 @app.route("/commits/")
 def commits_page():
     return render_template("commits.html")
-     api_url = "https://api.github.com/repos/ali-guettab/5MCSI_Metriques/commits?per_page=100"
+    api_url = "https://api.github.com/repos/ali-guettab/5MCSI_Metriques/commits?per_page=100"
 
 @app.route("/commits-data/")
 def commits_data():
