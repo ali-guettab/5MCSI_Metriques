@@ -7,7 +7,7 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__)      
 
-api_url = "https://api.github.com/repos/VOTRE_PSEUDO_GITHUB/5MCSI_Metriques/commits?per_page=100"
+api_url = "https://api.github.com/repos/ali-guettab/5MCSI_Metriques/commits?per_page=100"
                                                                                                                                        
 @app.route('/')
 def hello_world():
