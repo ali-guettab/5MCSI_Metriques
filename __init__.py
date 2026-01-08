@@ -14,6 +14,7 @@ def hello_world():
 @app.route("/commits/")
 def commits_page():
     return render_template("commits.html")
+     api_url = "https://api.github.com/repos/ali-guettab/5MCSI_Metriques/commits?per_page=100"
 
 @app.route("/commits-data/")
 def commits_data():
@@ -48,6 +49,7 @@ def meteo():
         temp_day_value = list_element.get('main', {}).get('temp') - 273.15 # Conversion de Kelvin en °c 
         results.append({'Jour': dt_value, 'temp': temp_day_value})
     return jsonify(results=results)
+  
 @app.route("/rapport/")
 def mongraphique():
     return render_template("graphique.html")
